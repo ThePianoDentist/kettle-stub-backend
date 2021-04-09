@@ -22,5 +22,9 @@ func PostDrinker(appCtx *app_context.AppContext, w http.ResponseWriter, r *http.
 	// (add stack overflow link here if find/know)
 	defer r.Body.Close()
 	appCtx.Drinkers = append(appCtx.Drinkers, d.Name)
+	err := appCtx.FcmController.SendFCM(appCtx.Token, fmt.Sprintf("%s demands Tea!", d.Name), "")
+	if err != nil {
+		appCtx.Lgr.Error("error publishing fcm message", zap.Error(err))
+	}
 	utils.SuccessResp(appCtx.Lgr, w, 200, map[string][]string{"drinkers": appCtx.Drinkers})
 }

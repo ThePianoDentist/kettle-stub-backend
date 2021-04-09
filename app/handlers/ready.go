@@ -8,7 +8,7 @@ import (
 )
 
 func Ready(appCtx *app_context.AppContext, w http.ResponseWriter, r *http.Request) {
-	err := appCtx.FcmController.SendFCM(appCtx.Token)
+	err := appCtx.FcmController.SendFCM(appCtx.Token, "Kettle boiled", "")
 	if err != nil {
 		appCtx.Lgr.Error("error publishing fcm message", zap.Error(err))
 	}
