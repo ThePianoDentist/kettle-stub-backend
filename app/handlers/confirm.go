@@ -2,6 +2,8 @@ package app
 
 import (
 	"net/http"
+  "fmt"
+  "go.uber.org/zap"
 
 	"github.com/ThePianoDentist/toast-notification/utils"
 

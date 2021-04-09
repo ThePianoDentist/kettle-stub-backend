@@ -3,12 +3,14 @@ package app
 import (
 	"encoding/json"
 	"net/http"
+  "fmt"
 
 	"github.com/ThePianoDentist/toast-notification/utils"
 
 	"github.com/ThePianoDentist/toast-notification/app_context"
 
 	"github.com/ThePianoDentist/toast-notification/storage"
+  "go.uber.org/zap"
 )
 
 func PostDrinker(appCtx *app_context.AppContext, w http.ResponseWriter, r *http.Request) {

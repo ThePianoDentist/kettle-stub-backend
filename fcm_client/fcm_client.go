@@ -34,11 +34,11 @@ func NewFCMController(lgr *zap.Logger) *FCMController {
 	return &FCMController{Client: client, Lgr: lgr}
 }
 
-func (c *FCMController) SendFCM(toToken string, title, message string) error {
+func (c *FCMController) SendFCM(toToken string, title, body string) error {
 	c.Lgr.Info("Sending fcm message to ", zap.String("To", toToken))
 	message := &messaging.Message{
 		Token:        toToken,
-		Notification: &messaging.Notification{Title: title, body: message},
+		Notification: &messaging.Notification{Title: title, Body: body},
 	}
 
 	// Send a message to the device corresponding to the provided registration token.
