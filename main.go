@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ThePianoDentist/toast-notification/app"
+	"github.com/ThePianoDentist/kettle-stub-backend/app"
 
 	"go.uber.org/zap"
 )

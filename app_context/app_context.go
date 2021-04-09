@@ -3,7 +3,7 @@ package app_context
 import (
 	"net/http"
 
-	"github.com/ThePianoDentist/toast-notification/fcm_client"
+	"github.com/ThePianoDentist/kettle-stub-backend/fcm_client"
 
 	"go.uber.org/zap"
 )

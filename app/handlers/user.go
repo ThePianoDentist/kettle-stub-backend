@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/ThePianoDentist/toast-notification/utils"
+	"github.com/ThePianoDentist/kettle-stub-backend/utils"
 
-	"github.com/ThePianoDentist/toast-notification/app_context"
+	"github.com/ThePianoDentist/kettle-stub-backend/app_context"
 
-	"github.com/ThePianoDentist/toast-notification/storage"
+	"github.com/ThePianoDentist/kettle-stub-backend/storage"
 )
 
 func PostUser(appCtx *app_context.AppContext, w http.ResponseWriter, r *http.Request) {

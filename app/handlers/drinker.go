@@ -5,11 +5,11 @@ import (
 	"net/http"
   "fmt"
 
-	"github.com/ThePianoDentist/toast-notification/utils"
+	"github.com/ThePianoDentist/kettle-stub-backend/utils"
 
-	"github.com/ThePianoDentist/toast-notification/app_context"
+	"github.com/ThePianoDentist/kettle-stub-backend/app_context"
 
-	"github.com/ThePianoDentist/toast-notification/storage"
+	"github.com/ThePianoDentist/kettle-stub-backend/storage"
   "go.uber.org/zap"
 )
 

@@ -4,16 +4,16 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/ThePianoDentist/toast-notification/app/middleware"
+	"github.com/ThePianoDentist/kettle-stub-backend/app/middleware"
 
-	"github.com/ThePianoDentist/toast-notification/app_context"
-	"github.com/ThePianoDentist/toast-notification/fcm_client"
+	"github.com/ThePianoDentist/kettle-stub-backend/app_context"
+	"github.com/ThePianoDentist/kettle-stub-backend/fcm_client"
 
 	_ "github.com/lib/pq"
 
 	//_ "github.com/jackc/pgx/v4"
 
-	handlers "github.com/ThePianoDentist/toast-notification/app/handlers"
+	handlers "github.com/ThePianoDentist/kettle-stub-backend/app/handlers"
 
 	"go.uber.org/zap"
 

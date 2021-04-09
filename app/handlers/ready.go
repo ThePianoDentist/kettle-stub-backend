@@ -3,7 +3,7 @@ package app
 import (
 	"net/http"
 
-	"github.com/ThePianoDentist/toast-notification/app_context"
+	"github.com/ThePianoDentist/kettle-stub-backend/app_context"
 	"go.uber.org/zap"
 )
 
