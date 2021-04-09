@@ -1,4 +1,4 @@
-module github.com/ThePianoDentist/toast-notification
+module github.com/ThePianoDentist/kettle-stub-backend
 
 go 1.14
 
