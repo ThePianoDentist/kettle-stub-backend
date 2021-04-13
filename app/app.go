@@ -27,7 +27,7 @@ type App struct {
 
 func NewApp(lgr *zap.Logger) *App {
 	fcmClient := fcm_client.NewFCMController(lgr)
-	appCtx := &app_context.AppContext{Lgr: lgr, FcmController: fcmClient, Drinkers: make([]string, 0)}
+	appCtx := &app_context.AppContext{Lgr: lgr, FcmController: fcmClient, Drinkers: []string{"Me"}}
 
 	router := mux.NewRouter()
 	app := &App{Router: router, appCtx: appCtx}
