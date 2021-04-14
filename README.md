@@ -1,16 +1,7 @@
-# toast-notification
+# communiTEA stub
 
-bit overcomplicated cos copy-pasted from my other more complex project.
+hacked to be super simple and just work for one kettle.
 
-also ignore the docker-compose stuff.
+could run across multiple kettles, so long as tie user-id to kettle-id by "signing in" to smart-kettle which has a specific device-id
 
-Im not using https with my android app due to android 7.0 boringssl issue with elliptic curvey things.
-
-Also if you want to try and get docker-compose working,
-
-there is a chicken and egg scenario where,
-
-you need nginx container running for certbot to succeed.
-you need certbot container to have run for nginx container to succeed.
-
-I resolved this by commenting out the https portion of nginx conf, letting certbot succeed (important to remove the --staging when its working), and then adding it back in.
+the weird "return status code 200 + num_drinkers" is due to my wifi chip behaving weirdly. and i can reliably read status codes, but not response bodies.
